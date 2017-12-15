@@ -1,0 +1,4 @@
+$hostname = hostname
+$Searcher = New-Object -ComObject Microsoft.Update.Searcher 
+$results = $searcher.search("Type='software' AND IsInstalled = 0")
+$Results.Updates | ForEach-Object { $_.Title + "`t" + $_.Identity.UpdateID + "`t" + $_.AutoSelectOnWebSites + "`t" + $_.UninstallationNotes} > .\Desktop\"$hostname"_targetUpdateID_Name.txt
