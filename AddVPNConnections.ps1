@@ -1,6 +1,6 @@
 ####
 #
-#	AddVPNConnections.ps1 ※SBCS用 VPN設定スクリプト
+#	AddVPNConnections.ps1 ※ VPN設定スクリプト
 #
 ####
 
